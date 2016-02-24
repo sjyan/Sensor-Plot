@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MagPlot"
+    tools:showIn="@layout/activity_mag">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Values"
+        android:id="@+id/textView27"
+        android:layout_marginLeft="75dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#0000FF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mean"
+        android:layout_marginLeft="75dp"
+        android:layout_alignLeft="@+id/textView27"
+        android:id="@+id/textView28"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#00FF00" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Std Dev"
+        android:layout_marginLeft="70dp"
+        android:layout_alignLeft="@+id/textView28"
+        android:id="@+id/textView29"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FF0000" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_below="@+id/textView27"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout3">
+
+        <edu.unc.sjyan.sensorplot.PlotView
+            android:id="@+id/plotview3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0      1      2      3      4       5      6      7      8      9"
+        android:id="@+id/textView30"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignLeft="@+id/linearLayout3"
+        android:layout_alignStart="@+id/linearLayout3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="35"
+        android:id="@+id/textView31"
+        android:layout_below="@+id/textView27"
+        android:layout_toLeftOf="@+id/linearLayout3"
+        android:layout_toStartOf="@+id/linearLayout3"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15"
+        android:id="@+id/textView32"
+        android:layout_below="@+id/textView27"
+        android:layout_toLeftOf="@+id/linearLayout3"
+        android:layout_toStartOf="@+id/linearLayout3"
+        android:layout_marginTop="80dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-15"
+        android:id="@+id/textView33"
+        android:layout_below="@+id/textView27"
+        android:layout_toLeftOf="@+id/linearLayout3"
+        android:layout_toStartOf="@+id/linearLayout3"
+        android:layout_marginTop="170dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-35"
+        android:id="@+id/textView34"
+        android:layout_below="@+id/textView27"
+        android:layout_toLeftOf="@+id/linearLayout3"
+        android:layout_toStartOf="@+id/linearLayout3"
+        android:layout_marginTop="230dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time (sec)"
+        android:id="@+id/textView35"
+        android:layout_below="@+id/textView30"
+        android:layout_centerHorizontal="true" />
+
+    <edu.unc.sjyan.sensorplot.VerticalTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:text="Magnetic Field (micro Tesla)"
+        android:id="@+id/textView36"
+        android:layout_toRightOf="@+id/linearLayout3"
+        android:layout_marginTop="58dp"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton3"
+        android:src="@drawable/ic_navigate_before_24dp"
+        android:onClick="onClick"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text=""
+        android:id="@+id/textView37"
+        android:layout_below="@+id/textView35"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="#00FFFF" />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.unc.sjyan.sensorplot">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="SensorPlot"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Chooser"
+            android:label="SensorPlot"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter android:label="SensorPlot">
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AccelPlot" android:label="AccelPlot"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter android:label="AccelPlot">
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LightPlot" android:label="LightPlot"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter android:label="LightPlot">
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MagPlot" android:label="MagPlot"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter android:label="MagPlot">
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

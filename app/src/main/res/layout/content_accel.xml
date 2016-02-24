@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AccelPlot"
+    tools:showIn="@layout/activity_accel">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Values"
+        android:id="@+id/textView16"
+        android:layout_marginLeft="75dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#0000FF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mean"
+        android:layout_marginLeft="75dp"
+        android:layout_alignLeft="@+id/textView16"
+        android:id="@+id/textView17"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#00FF00" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Std Dev"
+        android:layout_marginLeft="70dp"
+        android:layout_alignLeft="@+id/textView17"
+        android:id="@+id/textView18"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FF0000" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_below="@+id/textView16"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout2">
+
+        <edu.unc.sjyan.sensorplot.PlotView
+            android:id="@+id/plotview2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0      1      2      3      4       5      6      7      8      9"
+        android:id="@+id/textView20"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:layout_alignStart="@+id/linearLayout2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="16"
+        android:id="@+id/textView22"
+        android:layout_below="@+id/textView18"
+        android:layout_toLeftOf="@+id/linearLayout2"
+        android:layout_toStartOf="@+id/linearLayout2"
+        android:layout_marginTop="21dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12"
+        android:id="@+id/textView23"
+        android:layout_below="@+id/textView18"
+        android:layout_toLeftOf="@+id/linearLayout2"
+        android:layout_toStartOf="@+id/linearLayout2"
+        android:layout_marginTop="80dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:id="@+id/textView24"
+        android:layout_below="@+id/textView18"
+        android:layout_toLeftOf="@+id/linearLayout2"
+        android:layout_toStartOf="@+id/linearLayout2"
+        android:layout_marginTop="140dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:id="@+id/textView25"
+        android:layout_below="@+id/textView18"
+        android:layout_toLeftOf="@+id/linearLayout2"
+        android:layout_toStartOf="@+id/linearLayout2"
+        android:layout_marginTop="200dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time (sec)"
+        android:id="@+id/textView26"
+        android:layout_below="@+id/textView20"
+        android:layout_centerHorizontal="true" />
+
+    <edu.unc.sjyan.sensorplot.VerticalTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Acceleration (m/s^2)"
+        android:id="@+id/textView27"
+        android:layout_toRightOf="@+id/linearLayout2"
+        android:layout_marginTop="100dp"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:src="@drawable/ic_navigate_before_24dp"
+        android:onClick="onClick"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/textView26"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:maxHeight="150dp" />
+
+</RelativeLayout>

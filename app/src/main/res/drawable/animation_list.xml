@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false"
+    android:id="@+id/anim">
+    <item android:drawable="@drawable/mega1" android:duration="100" />
+    <item android:drawable="@drawable/mega2" android:duration="100" />
+    <item android:drawable="@drawable/mega3" android:duration="100" />
+    <item android:drawable="@drawable/mega4" android:duration="100" />
+</animation-list>

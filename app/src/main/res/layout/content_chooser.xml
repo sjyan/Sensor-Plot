@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AccelPlot"
+    tools:showIn="@layout/activity_accel">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accelerometer"
+            android:id="@+id/button"
+            android:onClick="onClick"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Light"
+            android:id="@+id/button2"
+            android:onClick="onClick"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/button"
+            android:layout_alignRight="@+id/button"
+            android:layout_alignEnd="@+id/button" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MagField"
+            android:id="@+id/button3"
+            android:onClick="onClick"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/button2"
+            android:layout_alignRight="@+id/button2"
+            android:layout_alignEnd="@+id/button2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/textView12"
+            android:layout_alignTop="@+id/button"
+            android:layout_toRightOf="@+id/button"
+            android:layout_toEndOf="@+id/button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/textView13"
+            android:layout_below="@+id/textView12"
+            android:layout_toRightOf="@+id/button"
+            android:layout_toEndOf="@+id/button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/textView14"
+            android:layout_below="@+id/textView13"
+            android:layout_alignTop="@+id/button2"
+            android:layout_toRightOf="@+id/button2"
+            android:layout_toEndOf="@+id/button2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/textView15"
+            android:layout_below="@+id/textView14"
+            android:layout_toRightOf="@+id/button2"
+            android:layout_toEndOf="@+id/button2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/textView16"
+            android:layout_below="@+id/textView15"
+            android:layout_alignTop="@+id/button3"
+            android:layout_toRightOf="@+id/button3"
+            android:layout_toEndOf="@+id/button3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/textView17"
+            android:layout_below="@+id/textView16"
+            android:layout_toRightOf="@+id/button3"
+            android:layout_toEndOf="@+id/button3" />
+
+</RelativeLayout>
